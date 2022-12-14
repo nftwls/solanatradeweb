@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities {
+  .product-box{
+    background: linear-gradient(135deg, rgba(27, 255, 221, 0.6) 14.02%, rgba(0, 0, 0, 0) 54.17%, rgba(119, 38, 255, 0.6) 86.03%);
+  }
+
+  .front_box{
+    background: rgba(109, 140, 248, 0.1);
+    backdrop-filter: blur(50px);
+  }
+
+  .gradient{
+    background: linear-gradient(135deg, rgba(27, 255, 221, 0.6) 14.02%, rgba(0, 0, 0, 0) 54.17%, rgba(119, 38, 255, 0.6) 86.03%);
+  }
+
+  .gradient_border{
+    border: 1px solid;
+    border-image-source: linear-gradient(135deg, #18F9D8 14.02%, rgba(59, 156, 230, 0) 47.24%, rgba(76, 110, 237, 0) 63.7%, #8237FF 90.12%);
+  }
+
+  .gradient_bg{
+    background-image: url("/gradient-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .gradient_product_bg{
+    background-image: url("/gradient-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .secondary_container{
+    border: 2px solid #27304F;
+    background-color: #202740;
+    opacity: calc(25);
+  }
+
+}
