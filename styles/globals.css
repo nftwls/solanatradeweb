@@ -36,7 +36,7 @@ body {
   .gradient_bg{
     background-image: url("/gradient-bg.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .gradient_product_bg{
@@ -50,6 +50,29 @@ body {
     border: 2px solid #27304F;
     background-color: #202740;
     opacity: calc(25);
+  }
+
+  .footer_bg_one{
+    background-image: url("/footer-bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer_bg_two{
+    background-image: url("/footer-bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer_bg{
+    background: url("/footer-bg-1.png"), url("/footer-bg-2.png");
+    background-repeat: no-repeat;
+    background-origin: content-box, padding-box;
+    background-size: cover;
+  }
+
+  .tokenOverflow{
+    width:calc(100vh - 2rem)!important;
   }
 
 }

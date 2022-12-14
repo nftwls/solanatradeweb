@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from '@nextui-org/react'
 import ProductList from 'components/Products'
 import Navigation from 'components/Navigation'
-import { FiArrowRight } from "react-icons/fi";
+import { HiArrowNarrowRight } from "react-icons/hi";
 import FAQ from 'components/FAQ'
 import Footer from 'components/Footer'
+import {Token} from 'components/Token'
 
 export default function Home() {
   return (
@@ -17,20 +19,20 @@ export default function Home() {
       </Head>
 
       <Container lg>
-        <div className="h-full md:h-screen">
+        <div className="md:h-screen">
           <Navigation/>
           <Container md>
-            <div className="grid auto-cols-auto md:grid-cols-2 auto-rows-auto md:grid-rows-1 items-center">
+            <div className="text-center md:text-left grid auto-cols-auto md:grid-cols-2 auto-rows-auto md:grid-rows-1 items-center">
               <div className="grid grid-cols-1 auto-rows-auto gap-8">
                 <span className="uppercase text-xs md:text-sm font-semibold text-sea-green">Trade on SolanaTrade</span>
                 <h1 style={{ lineHeight: 1.2 }}className="text-pearl-white font-semibold text-4xl md:text-6xl">Trade Any and Every Token Directly on the Solana Blockchain</h1>
                 <p className="text-dull-gray text-base md:text-lg">SolanaTrade is a decentralized exchange that allows you to maintain custody of your funds while you trade.</p>
-                <a className="gradient_bg text-pearl-white flex items-center justify-between w-fit px-2 py-1 rounded-md" href="">
-                  <p className="font-semibold">
-                    Coming Soon
-                  </p>
-                  <FiArrowRight className="mx-2"/>
-                </a>
+                <div className="flex justify-center md:justify-start">
+                  <Link className="gradient_bg text-pearl-white font-semibold flex items-center w-fit px-4 py-2 rounded-md" href="/">
+                      Coming soon
+                    <HiArrowNarrowRight className="ml-2"/>
+                  </Link>
+                </div>
               </div>
               <div>
                 <div className="flex items-center justify-center">
@@ -42,8 +44,43 @@ export default function Home() {
         </div>
       </Container>
 
+      <div className="relative w-full overflow-hidden flex items-center h-48">
+
+        {/* PURPLE BANNER */}
+        <div style={{ 
+            transform: 'rotate(4deg)',
+          }} 
+          className="absolute w-full h-12 md:h-20 bg-st-purple flex justify-center">
+          <div className="grid grid-rows-1 grid-cols-6 w-screen gap-4">
+            <Token color="#FAFAFF" mint="DUSTawucrTsGU8hcqRdHDCbuYhCPADMLM2VcCb8VnFnQ"/>
+            <Token color="#FAFAFF" mint="USDH1SM1ojwWUga67PGrgFWUHibbjqMvuMaDkRJTgkX"/>
+            <Token color="#FAFAFF" mint="SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp"/>
+            <Token color="#FAFAFF" mint="EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"/>
+            <Token color="#FAFAFF" mint="Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"/>
+            <Token color="#FAFAFF" mint="7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj"/>
+          </div>
+        </div>
+
+        {/* SEA GREEN BANNER */}
+        <div
+          style={{
+            transform: 'rotate(-4deg)',
+          }} 
+          className="absolute w-full h-12 md:h-20 bg-sea-green flex justify-center -rotate-12">
+          <div className="grid grid-rows-1 grid-cols-6 w-screen gap-4">
+            <Token color="#444444" mint="So11111111111111111111111111111111111111112"/>
+            <Token color="#444444" mint="mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So"/>
+            <Token color="#444444" mint="SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp"/>
+            <Token color="#444444" mint="EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"/>
+            <Token color="#444444" mint="Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"/>
+            <Token color="#444444" mint="orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE"/>
+          </div>
+        </div>
+
+      </div>
+
       <Container md>
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center my-20">
           <p className="mt-10 md:mt-0 leading-loose w-full md:w-1/2 text-center font-semibold text-2xl md:text-4xl text-pearl-white">
             Maintain custody of your crypto while you trade the <span className="text-sea-green">future of finance.</span>
           </p>
@@ -102,7 +139,7 @@ export default function Home() {
               <p className="font-semibold">
                 Trade Now
               </p>
-              <FiArrowRight/>
+              <HiArrowNarrowRight/>
             </a>
           </div>
         </div>
@@ -120,7 +157,7 @@ export default function Home() {
               answer="Solana.Trade is a decentralized exchange built on Openbook, a community-led fork of the Serum V3 program."
               open={true}/>
               <FAQ 
-              question="What is a Decentrtaized Exchange?" 
+              question="What is a Decentralized Exchange?" 
               answer={`A decentralized exchange is a peer-to-peer exchange that allows users to maintain custody of their own funds and trades are settled directly on the blockchain. 
               Solana.Trade is built on top of the Solana blockchain and trades are settled on the Solana blockchain.`}
               open={false}/>

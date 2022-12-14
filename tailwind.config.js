@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'pearl-white': '#FAFAFF',
+        'st-purple': '#700FFD',
         'sea-green': '#18F9D8',
         'dark-blue': '#202740',
         'dull-gray': '#7986A8',

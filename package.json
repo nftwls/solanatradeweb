@@ -17,10 +17,13 @@
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
+    "moment": "^2.29.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-faq-component": "^1.3.4",
     "react-icons": "^4.7.1",
+    "@solana/spl-token-registry": "^0.2.4574",
+    "swr": "^2.0.0",
     "typescript": "4.9.4"
   },
   "devDependencies": {
