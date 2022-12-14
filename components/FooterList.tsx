@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 interface FooterListProps {
     title: string;
@@ -13,7 +14,7 @@ export default function FooterList({ title, list, link }: FooterListProps) {
             <ul className="text-dull-gray text-xs">
                 {list.map((item, index) => (
                     <li key={index} className="text-sm">
-                        <a href={link[index]}>{item}</a>
+                        <Link href={link[index]}>{item}</Link>
                     </li>
                 ))}
             </ul>

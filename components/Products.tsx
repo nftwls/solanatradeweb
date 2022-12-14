@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { FiArrowRight } from "react-icons/fi";
+import Link from 'next/link'
 
 interface ProductListProps {
     productIcon: React.ReactNode;
