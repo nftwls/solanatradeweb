@@ -23,11 +23,10 @@ export default function Home() {
 
       <div className="">
       <Container lg>
-        <div className="">
           <Navigation/>
           <Container md>
-            <div className="text-center md:text-left grid auto-cols-auto md:grid-cols-2 auto-rows-auto md:grid-rows-1 items-center">
-              <div className="grid grid-cols-1 auto-rows-auto gap-8">
+            <div className="my-20 text-center md:text-left grid auto-cols-auto md:grid-cols-2 auto-rows-auto md:grid-rows-1 items-center">
+              <div className="grid grid-cols-1 auto-rows-auto gap-4">
                 <span className="uppercase text-xs md:text-sm font-semibold text-sea-green">Trade on SolanaTrade</span>
                 <h1 style={{ lineHeight: 1.2 }}className="text-pearl-white font-semibold text-4xl md:text-6xl">Trade Any and Every Token Directly on the Solana Blockchain</h1>
                 <p className="text-dull-gray text-base md:text-lg">SolanaTrade is a decentralized exchange that allows you to maintain custody of your funds while you trade.</p>
@@ -40,12 +39,11 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex items-center justify-center">
-                  <img className="hidden md:block md:w-3/4" src="/rainbow-loop.png"/>
+                  <img className="hidden md:block md:w-80" src="/rainbow-loop.png"/>
                 </div>
               </div>
             </div>
           </Container>
-        </div>
       </Container>
       </div>
 
