@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <Container lg>
-        <div className="md:h-screen">
+        <div className="">
           <Navigation/>
           <Container md>
             <div className="text-center md:text-left grid auto-cols-auto md:grid-cols-2 auto-rows-auto md:grid-rows-1 items-center">
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <div className="relative w-full overflow-hidden flex items-center h-48">
+      <div className="relative w-full overflow-hidden flex items-center h-56">
 
         {/* PURPLE BANNER */}
         <div style={{ 
