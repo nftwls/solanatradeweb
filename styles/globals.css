@@ -33,6 +33,12 @@ body {
     border-image-source: linear-gradient(135deg, #18F9D8 14.02%, rgba(59, 156, 230, 0) 47.24%, rgba(76, 110, 237, 0) 63.7%, #8237FF 90.12%);
   }
 
+  .abovethefold_bg{
+    background-image: url("/abovethefoldbg.svg");
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
   .gradient_bg{
     background-image: url("/gradient-bg.svg");
     background-repeat: no-repeat;

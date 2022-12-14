@@ -8,6 +8,9 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import FAQ from 'components/FAQ'
 import Footer from 'components/Footer'
 import {Token} from 'components/Token'
+import { LinkComponent } from 'components/LinkComponent'
+import { Disclosure } from '@headlessui/react'
+import { FiChevronDown } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -18,6 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="">
       <Container lg>
         <div className="">
           <Navigation/>
@@ -43,6 +47,7 @@ export default function Home() {
           </Container>
         </div>
       </Container>
+      </div>
 
       <div className="relative w-full overflow-hidden flex items-center h-56">
 
@@ -166,10 +171,28 @@ export default function Home() {
               answer={`Solana.Trade is built on the Solana blockchain. 
               Solana.Trade is not affiliated with Solana Foundation or Solana Labs.`}
               open={false}/>
-              <FAQ 
-              question="Who can I contact for help?" 
-              answer={`Join the Solana.Trade Discord here: `}
-              open={false}/>
+
+              <div className="secondary_container rounded-lg p-3">
+                <Disclosure>
+                    <div>
+                        <Disclosure.Button className="w-full">
+                        {({ open }) => (
+                            <div className="flex items-center justify-between text-left">
+                                <span className="text-pearl-white text-sm md:text-lg font-medium">Who can I contact for help?</span>
+                                <FiChevronDown
+                                    className={`${
+                                        open ? 'rotate-180 transform' : ''
+                                    } h-5 w-5 text-pearl-white border rounded-full`}
+                                />
+                            </div>
+                        )}
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="text-gray-500 text-base pt-5">
+                            <span>Join the Solana.Trade Discord here: <a target="blank_" className="text-pearl-white font-medium" href="https://discord.gg/yCGAh6pRPq">https://discord.gg/yCGAh6pRPq</a></span>
+                        </Disclosure.Panel>
+                    </div>
+                </Disclosure>
+              </div>
           </div>
         </div>
       </Container>
