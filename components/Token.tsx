@@ -9,7 +9,7 @@ export const Token = (props: { mint: any, color:any }) => {
                     color: props.color,
                 }}  
                 className="flex items-center">
-                <div className="w-5 h-5 md:w-7 md:h-7 mr-2">
+                <div className="hidden md:block md:w-7 md:h-7 mr-2">
                     <TokenIcon mint={props.mint} />
                 </div>
                 <div className="grid grid-cols-1 grid-rows-2">

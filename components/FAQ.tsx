@@ -16,7 +16,7 @@ const FAQ: FC<FAQProps> = ({ question, answer, open }) => {
                 <Disclosure.Button className="w-full">
                 {({ open }) => (
                     <div className="flex items-center justify-between text-left">
-                        <span className="text-pearl-white text-sm md:text-lg font-medium">{question}</span>
+                        <span className="text-pearl-white text-sm md:text-lg font-medium w-3/4 md:w-full">{question}</span>
                         <FiChevronDown
                             className={`${
                                 open ? 'rotate-180 transform' : ''
@@ -25,7 +25,7 @@ const FAQ: FC<FAQProps> = ({ question, answer, open }) => {
                     </div>
                 )}
                 </Disclosure.Button>
-                <Disclosure.Panel className="text-gray-500 text-base pt-5">
+                <Disclosure.Panel className="text-gray-500 text-xs md:text-sm pt-2.5">
                     {answer}
                 </Disclosure.Panel>
             </div>

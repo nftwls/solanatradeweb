@@ -51,9 +51,9 @@ export default function Home() {
 
         {/* PURPLE BANNER */}
         <div style={{ 
-            transform: 'rotate(4deg)',
+            transform: 'rotate(3deg)',
           }} 
-          className="absolute w-full h-12 md:h-20 bg-st-purple flex justify-center">
+          className="absolute w-full h-12 md:h-16 bg-st-purple flex justify-center">
           <div className="grid grid-rows-1 grid-cols-6 w-screen gap-4">
             <Token color="#FAFAFF" mint="DUSTawucrTsGU8hcqRdHDCbuYhCPADMLM2VcCb8VnFnQ"/>
             <Token color="#FAFAFF" mint="USDH1SM1ojwWUga67PGrgFWUHibbjqMvuMaDkRJTgkX"/>
@@ -67,9 +67,9 @@ export default function Home() {
         {/* SEA GREEN BANNER */}
         <div
           style={{
-            transform: 'rotate(-4deg)',
+            transform: 'rotate(-3deg)',
           }} 
-          className="absolute w-full h-12 md:h-20 bg-sea-green flex justify-center -rotate-12">
+          className="absolute w-full h-12 md:h-16 bg-sea-green flex justify-center -rotate-12">
           <div className="grid grid-rows-1 grid-cols-6 w-screen gap-4">
             <Token color="#444444" mint="So11111111111111111111111111111111111111112"/>
             <Token color="#444444" mint="mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So"/>
@@ -185,7 +185,7 @@ export default function Home() {
                             </div>
                         )}
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-gray-500 text-base pt-5">
+                        <Disclosure.Panel className="text-gray-500 text-xs md:text-sm pt-5">
                             <span>Join the Solana.Trade Discord here: <a target="blank_" className="text-pearl-white font-medium" href="https://discord.gg/yCGAh6pRPq">https://discord.gg/yCGAh6pRPq</a></span>
                         </Disclosure.Panel>
                     </div>
